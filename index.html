@@ -81,7 +81,7 @@
 					<!-- Gallery  -->
 						<div class="gallery">
 							<article class="from-left">
-								<a href="images/fulls/Welp.jpg" class="image fit"><img src="images/thumbs/Welp.jpg" title="Welp" alt="" data-url="https://welp-m0r8.onrender.com/"/></a>
+								<a href="images/fulls/Welp.jpg" class="image fit"><img src="images/thumbs/Welp.jpg" title="Welp" alt="" /></a>
 							</article>
 							<article class="from-right">
 								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
@@ -154,27 +154,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-
-			<script>
-				document.addEventListener('DOMContentLoaded', (event) => {
-					const images = document.querySelectorAll('img[title]');
-			
-					images.forEach(img => {
-						const title = img.getAttribute('title');
-						const url = img.getAttribute('data-url');
-			
-						if (url) {
-							const titleLink = document.createElement('a');
-							titleLink.href = url;
-							titleLink.textContent = title;
-			
-							img.setAttribute('title', '');
-							img.parentElement.appendChild(titleLink);
-						}
-					});
-				});
-			</script>
 
 	</body>
 </html>
