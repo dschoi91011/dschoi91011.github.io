@@ -1449,6 +1449,7 @@ input, select, textarea {
 			.gallery article .image {
 				margin: 0;
 				display: block;
+				height: 800px;
 			}
 
 			.gallery article:nth-last-child(1n) {
