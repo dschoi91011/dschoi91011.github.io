@@ -82,7 +82,7 @@
 						<div class="gallery">
 							<article class="from-left">
 								<!-- <a href="images/fulls/Welp.jpg" class="image fit"><img src="images/thumbs/Welp.jpg" title="Welp" alt="" /></a> -->
-								<a href="www.google.com" class="image fit"><img src="images/thumbs/Welp.jpg" title="Welp" alt="" /></a>
+								<a href="images/fulls/Welp.jpg" class="image fit" id="welp-link"><img src="images/thumbs/Welp.jpg" title="Welp" alt="" /></a>
 							</article>
 							<article class="from-right">
 								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
@@ -156,5 +156,11 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+				document.getElementById('welp-link').addEventListener('click', function(event) {
+					event.preventDefault(); // Prevent the default link behavior
+					window.location.href = 'https://www.google.com'; // Redirect to Google
+				});
+			</script>
 	</body>
 </html>
