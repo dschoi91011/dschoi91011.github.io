@@ -81,7 +81,6 @@
 					<!-- Gallery  -->
 						<div class="gallery">
 							<article class="from-left">
-								<!-- <a href="images/fulls/Welp.jpg" class="image fit"><img src="images/thumbs/Welp.jpg" title="Welp" alt="" /></a> -->
 								<a href="images/fulls/Welp.jpg" class="image fit" id="welp-link"><img src="images/thumbs/Welp.jpg" title="Welp" alt="" /></a>
 							</article>
 							<article class="from-right">
@@ -91,7 +90,7 @@
 								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+								<a href="images/fulls/04.jpg" class="image fit" id="stumblr-link"><img src="images/thumbs/stumblr.png" title="Stumblr" alt="" /></a>
 							</article>
 							<article class="from-left">
 								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
@@ -160,6 +159,13 @@
 				document.getElementById('welp-link').addEventListener('click', function(event) {
 					event.preventDefault();
 					window.open('https://welp-m0r8.onrender.com/', '_blank');
+				});
+			</script>
+
+			<script>
+				document.getElementById('stumblr-link').addEventListener('click', function(event) {
+					event.preventDefault();
+					window.open('https://stumblr.onrender.com/', '_blank');
 				});
 			</script>
 	</body>
